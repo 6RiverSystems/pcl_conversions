@@ -3,7 +3,7 @@ project(pcl_conversions)
 
 find_package(catkin REQUIRED COMPONENTS pcl_msgs roscpp sensor_msgs std_msgs cmake_modules)
 
-find_package(PCL 1.8 REQUIRED QUIET)
+find_package(PCL 1.8 REQUIRED QUIET COMPONENTS io common)
 find_package(Eigen3 REQUIRED)
 
 include_directories(include ${catkin_INCLUDE_DIRS} ${PCL_COMMON_INCLUDE_DIRS} ${Eigen_INCLUDE_DIRS})
